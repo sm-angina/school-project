@@ -135,6 +135,7 @@ function rollIndex(e = event) {
   if(e.key == "Enter" && input.value < data.length){
     currentIndex = input.value - 1
     loadArticle(data[currentIndex])
+    saveCrnIndex()
   }
 }
 
@@ -150,6 +151,7 @@ function idIndex(student = data, e = event){
           if(student[i].id == id.value){
             currentIndex = i
             loadArticle(data[currentIndex])
+            saveCrnIndex()
           }
         }
 

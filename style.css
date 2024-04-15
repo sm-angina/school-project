@@ -155,6 +155,11 @@ article {
   text-align: left;
   margin-top: 20px;
 }
+@media screen and (min-width: 1050px){
+  .student-details > table{
+    width: 60%
+  }
+}
 .student-details > table tr td {
   cursor: text;
   transform: translateX(20px);
@@ -166,7 +171,7 @@ article {
 }
 th::after {
   content: ":";
-  width: 100%;
+  width: 105%;
   position: absolute;
   left: 0;
   text-align: right;

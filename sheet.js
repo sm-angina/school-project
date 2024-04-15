@@ -15,7 +15,7 @@ function loadArticle(data) {
                     <img src=${data.image}>
                 </div>
                 <div> 
-                    <input class="student-id" value="${data.id}" onkeyup="idIndex()" onfocusout="inputFcsOut(event, currId)"> 
+                    <input class="student-id" value="${data.id}" onkeyup="idIndex()" onclick="inputFcs()" onfocusout="inputFcsOut(event, currId)"> 
                 </div>
                 <div class="student-details"> 
                 <table>
@@ -52,7 +52,7 @@ function loadArticle(data) {
             <div class="article-heading">
                 <h1>${data.name}<h1>
             </div>
-            <input class="article-heading-icon" value="${data.roll}" onkeyup="rollIndex()" onfocusout="inputFcsOut(event, currRoll)">
+            <input class="article-heading-icon" value="${data.roll}" onkeyup="rollIndex()" onclick="inputFcs()" onfocusout="inputFcsOut(event, currRoll)">
         </div>
     </div>
     <div class="article-button-section article-section">
@@ -136,11 +136,8 @@ function rollIndex(e = event) {
     currentIndex = input.value - 1
     loadArticle(data[currentIndex])
     saveCrnIndex()
+    document.body.onkeyup = arrowKeys;
   }
-}
-
-function inputFcsOut(e, currValue){
-  e.target.value = currValue
 }
 
 function idIndex(student = data, e = event){
@@ -154,14 +151,22 @@ function idIndex(student = data, e = event){
             saveCrnIndex()
           }
         }
-
-    },300)
+        
+      },300)
+      document.body.onkeyup = arrowKeys;
   }
 }
+function inputFcs(){
+  document.body.onkeyup = null;
+}
 
+function inputFcsOut(e, currValue){
+  e.target.value = currValue
+  document.body.onkeyup = arrowKeys
+}
 
 document.body.onkeyup = arrowKeys;
-function arrowKeys(e) {
+function arrowKeys(e = event) {
   if (e.key == "ArrowLeft") {
     leftButton.click();
   } else if (e.key == "ArrowRight") {

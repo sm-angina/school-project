@@ -136,7 +136,7 @@ article {
 }
 .student-id {
   width: clamp(5.5rem, 10vw, 120px);
-  margin-left: 85%;
+  margin-left: 82%;
   background-color: transparent;
   border: none;
   padding: .2rem;
@@ -220,6 +220,7 @@ th::after {
   width: 4rem;
   background-color: transparent;
   border: none;
+  text-align: center;
 }
 
 .article-button-section > .buttons > i {

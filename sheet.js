@@ -1,3 +1,19 @@
+let studentBtn = document.querySelector('#nav-student_js')
+studentBtn.addEventListener('click',()=>{
+  let sections = document.querySelector('.student-sections')
+  sections.style = `overflow: visible;
+                    height: fit-content;
+                    padding: .5rem 0;
+                   `
+})
+let sections = document.querySelector('.student-sections')
+  sections.addEventListener('mouseleave',()=>{
+  sections.style = `overflow: hidden;
+                    height: 0;
+                    padding: 0;
+ ` 
+})
+
 let currentIndex = localStorage.getItem("Index") || 0;
 let main = document.querySelector("main");
 loadArticle(data[currentIndex]);
@@ -20,20 +36,36 @@ function loadArticle(data) {
                 <div class="student-details"> 
                 <table>
                     <tr>
-                        <th>Father's name</th>
-                        <td> ${data.details.father}</td>
+                        <th>
+                          <span>Father's name </span>
+                        </th>
+                        <td> 
+                          <span>${data.details.father} </span>
+                        </td>
                     </tr>
                     <tr>
-                        <th>Mother's name</th>
-                        <td> ${data.details.mother}</td>
+                        <th>
+                          <span>Mother's name </span>
+                        </th>
+                        <td> 
+                          <span>${data.details.mother} </span>
+                        </td>
                     </tr>
                     <tr>
-                        <th>Religion</th>
-                        <td> ${data.details.religion}</td>
+                        <th>
+                          <span>Religion </span>
+                        </th>
+                        <td>
+                          <span>${data.details.religion} </span>
+                        </td>
                     </tr>
                     <tr>
-                        <th>Exam</th>
-                        <td> </td>
+                        <th>
+                          <span>Exam </span>
+                        </th>
+                        <td>
+                          <span>  </span>
+                        </td>
                     </tr>
               </table>
                 </div>

@@ -14,7 +14,7 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--text-color);
-  cursor: url('cursor.png'),pointer;
+  cursor: url('src/cursor/cursor.png'), auto;
 }
 html{
   height: 100vh;
@@ -45,93 +45,7 @@ strong {
 a {
   text-decoration: none;
   cursor: pointer;
-}
-nav {
-  width: 100%;
-  display: flex;
-  border-bottom: var(--border);
-}
-nav > .nav-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 0;
-  border-right: var(--border);
-}
-.nav-logo-section,
-.nav-page-section {
-  flex-basis: calc(100% / 3);
-}
-.nav-social-section,
-.nav-contact-section {
-  flex-basis: calc(100% / 6);
-}
-.nav-section > a > i {
-  font-size: 1.4rem;
-}
-.nav-logo-section {
-  justify-content: flex-start !important;
-  font-size: 2rem;
-  a {
-    margin-left: 2rem;
-    color: var(--bold-text);
-    text-shadow: var(--bold-txt-shadow);
-  }
-}
-.nav-page-section {
-  gap: 6vw;
-}
-.nav-social-section {
-  gap: 1rem;
-}
-.nav-contact-section {
-  border-right: none !important;
-}
-a:hover,
-i:hover,
-.active {
-  color: var(--link-color);
-}
-.active{
-  cursor: wait;
-}
-
-.nav-section > div{
-  position: relative;
-}
-.student-sections{
-  height: 0;
-  position: absolute;
-  width: 200%;
-  top: 150%;
-  left: -50%;
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 11;
-  transition: all .1s linear;
-  background-color: gray;
-}
-.student-sections::before{
-  content: "";
-  height: 15%;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 50%;
-  transform: rotate(45deg) translateY(calc(-50% - .8rem));
-  transition: all .1s linear;
-  background-color: gray;
-}
-.student-sections a{
-  display: block;
-  padding-left: 5px;
-  line-height: 1.5rem;
-  border-left: 3px solid transparent;
-}
-.student-sections a:hover{
-  border-color: var(--link-color);
-}
-#nav-student_js{
-  cursor: pointer;
+  padding: 2px;
 }
 main {
   width: 100%;
@@ -288,22 +202,6 @@ th::after {
   }
 }
 @media screen and (max-width: 744px) {
-  .nav-section {
-    padding: 1rem !important;
-    position: relative;
-    border: none !important;
-  }
-  .nav-section::after {
-    content: "";
-    height: 60%;
-    width: 2px;
-    position: absolute;
-    right: 0;
-    background-color: rgb(93, 93, 97);
-  }
-  .nav-contact-section::after {
-    display: none;
-  }
   article {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 3fr;

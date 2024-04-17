@@ -231,9 +231,6 @@ th::after {
 }
 
 @media screen and (max-width: 570px) {
-  body {
-    height: 95vh;
-  }
   .student-id {
     transform: translateY(-10vw);
   }

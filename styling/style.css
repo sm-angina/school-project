@@ -203,7 +203,7 @@ th::after {
 }
 @media screen and (max-width: 768px) {
   body{
-    height: 95%;
+    height: 95vh;
   }
   article {
     grid-template-columns: 2fr 1fr;

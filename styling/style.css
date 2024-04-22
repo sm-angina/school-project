@@ -201,7 +201,10 @@ th::after {
     color: var(--green)
   }
 }
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 768px) {
+  body{
+    height: 95%;
+  }
   article {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 3fr;

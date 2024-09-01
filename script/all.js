@@ -103,7 +103,7 @@ function loadArticle(data) {
 
   
 --------------------------------------------------------------------------------------------------------------------
-  if(data.roll = 26){
+  if(data.roll == 27){
   let cmnt = document.querySelector('.article-description-section').innerText;
     cmnt = '🫠'
   }

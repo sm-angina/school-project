@@ -212,7 +212,7 @@ const data = [
     name: "Sakibul Hasan",
     id: 2021023,
     roll: "27",
-    image: "src/image019.jpg",
+    image: "src/image027.jpg",
     details: {
       father: "Md Jahangir Alom",
       mother: "Miss Sahira Begum",

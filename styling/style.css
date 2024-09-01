@@ -154,7 +154,7 @@ th::after {
 .article-description-section {
   flex-direction: column;
   justify-content: flex-end;
-  width: 33.33%;
+  width: 33.33vw;
   position: relative;
 }
 .article-description-section div p{

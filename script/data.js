@@ -208,7 +208,67 @@ const data = [
       religion: "Islam",
     },
   },
-    {
+      {
+    name: "Farhana Akhter Mily",
+    id: 2022623,
+    roll: "21",
+    image: "src/image021.jpg",
+    details: {
+      father: "Md Mijanur Rahman",
+      mother: "Narkis Begum",
+      religion: "Islam",
+    },
+  },    {
+    name: "Sumiya Akter Shati",
+    id: 2022023,
+    roll: "22",
+    image: "src/image022.jpg",
+    details: {
+      father: "Helal Ahmed",
+      mother: "Hashina Akter",
+      religion: "Islam",
+    },
+  },    {
+    name: "Md Nabil Hossain",
+    id: 2046323,
+    roll: "23",
+    image: "src/image023.jpg",
+    details: {
+      father: "Sah Jamal Mia",
+      mother: "Rina Begum",
+      religion: "Islam",
+    },
+  },    {
+    name: "Jannatul Mawa Minha",
+    id: 2072423,
+    roll: "24",
+    image: "src/image024.jpg",
+    details: {
+      father: "Md Milon",
+      mother: "Suria Begum",
+      religion: "Islam",
+    },
+  },    {
+    name: "Muradul Islam Shaun",
+    id: 2020823,
+    roll: "25",
+    image: "src/image025.jpg",
+    details: {
+      father: "Shiraj",
+      mother: "Lutfur Nahar",
+      religion: "Islam",
+    },
+  },    {
+    name: "Ishrat Jahan Mitu",
+    id: 2019923,
+    roll: "26",
+    image: "src/image026.jpg",
+    details: {
+      father: "Md Jamal Hossain",
+      mother: "Ayesha Begum",
+      religion: "Islam",
+    },
+  },    {
     name: "Sakibul Hasan",
     id: 2021023,
     roll: "27",
@@ -216,6 +276,37 @@ const data = [
     details: {
       father: "Md Jahangir Alom",
       mother: "Miss Sahira Begum",
+      religion: "Islam",
+    },
+  },    {
+    name: "Tania Akter",
+    id: 2023123,
+    roll: "28",
+    image: "src/image028.jpg",
+    details: {
+      father: "Abdur Rob",
+      mother: "Nasima Akter",
+      religion: "Islam",
+    },
+  },    {
+    name: "Tasmia Binte Ferdaus",
+    id: 2022523,
+    roll: "29",
+    image: "src/image029.jpg",
+    details: {
+      father: "Md Ferdaushul Alom",
+      mother: "Taslima Akter",
+      religion: "Islam",
+    },
+  },
+    {
+    name: "Md Tahmid Moontasir Saowmoon",
+    id: 2019123,
+    roll: "30",
+    image: "src/image030.jpg",
+    details: {
+      father: "Md Kamal Hossain",
+      mother: "Kazi Khadizatul Kobra",
       religion: "Islam",
     },
   },

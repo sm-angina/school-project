@@ -99,6 +99,14 @@ function loadArticle(data) {
                 </article>`;
   currId = data.id;
   currRoll = data.roll;
+  
+
+  
+--------------------------------------------------------------------------------------------------------------------
+  if(data.roll = 26){
+  let cmnt = document.querySelector('.article-description-section').innerText;
+    cmnt = '🫠'
+  }
 }
 function newArticle() {
   currentIndex < data.length ? currentIndex++ : currentIndex;
@@ -205,3 +213,4 @@ function arrowKeys(e = event) {
     rightButton.click();
   }
 }
+

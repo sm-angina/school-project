@@ -75,7 +75,7 @@ function loadArticle(data) {
                   </div>
                   <div class="article-description-section article-section">
                       <div>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Doloribus porro qui odit?</strong> Omnis
+                          <p contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Doloribus porro qui odit?</strong> Omnis
                               doloribus accusamus qui quia fugiat praesentium nostrum culpa saepe.Similique eius <strong>nostrum
                                   corporis atque,</strong> natus deserunt ad consequuntur <strong>officiis vel consectetur
                                   repellat?</strong></p>

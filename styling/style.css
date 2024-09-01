@@ -154,6 +154,11 @@ th::after {
 .article-description-section {
   flex-direction: column;
   justify-content: flex-end;
+  width: 33.33%;
+  position: relative;
+}
+.article-description-section div p{
+  min-height: 1.5rem;
 }
 .article-title-section,
 .article-button-section {

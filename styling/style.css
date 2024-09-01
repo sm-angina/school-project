@@ -140,6 +140,9 @@ th::after {
   overflow: scroll;
   position: relative;
 }
+.article-section::-webkit-scrollbar {
+  display: none;
+}
 .article-main-section,
 .article-title-section {
   border-right: var(--border);

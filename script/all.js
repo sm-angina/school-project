@@ -99,14 +99,6 @@ function loadArticle(data) {
                 </article>`;
   currId = data.id;
   currRoll = data.roll;
-  
-
-  
-//--------------------------------------------------------------------------------------------------------------------
-  if(data.roll == '27'){
-  let cmnt = document.querySelector('.article-description-section').innerText;
-    cmnt = '🫠'
-  }
 }
 function newArticle() {
   currentIndex < data.length ? currentIndex++ : currentIndex;
